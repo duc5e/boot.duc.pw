@@ -15,14 +15,14 @@ item --gap ${os} Flavors
 goto ${live_version}
 
 :debian
-item /debian-squash/releases/download/2.6.6-7-f0e77646/ ${space} Clonezilla Debian Testing
+item /debian-squash/releases/download/2.6.6-9-f0e77646/ ${space} Clonezilla Debian Testing
 item /debian-squash/releases/download/2.6.5-21-3f1c0d13/ ${space} Clonezilla Debian Stable
 choose path || goto live_menu
 goto clonezilla-boot
 
 :ubuntu
 item /ubuntu-squash/releases/download/20200302-eoan-355f8d57/ ${space} Clonezilla Ubuntu Stable
-item /ubuntu-squash/releases/download/20200322-focal-fb737dc0/ ${space} Clonezilla Ubuntu Testing
+item /ubuntu-squash/releases/download/20200409-focal-fb737dc0/ ${space} Clonezilla Ubuntu Testing
 choose path || goto live_menu
 goto clonezilla-boot
 

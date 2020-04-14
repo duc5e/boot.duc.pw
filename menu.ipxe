@@ -3,7 +3,7 @@
 :start
 chain --autofree boot.cfg ||
 echo Attempting to retrieve latest upstream version number...
-chain --timeout 5000 https://boot.duc.pw/version.ipxe ||
+chain --timeout 5000 https://boot.netboot.xyz/version.ipxe ||
 ntp 0.pool.ntp.org ||
 iseq ${cls} serial && goto ignore_cls ||
 set cls:hex 1b:5b:4a  # ANSI clear screen sequence - "^[[J"
@@ -41,6 +41,10 @@ item changebits ${space} Architecture: ${arch} (${bits}bit)
 item shell ${space} iPXE shell
 item netinfo ${space} Network card info
 item lspci ${space} PCI Device List
+item about ${space} About netboot.xyz
+isset ${github_user} && item --gap Custom Github Menu: ||
+isset ${github_user} && item custom-github ${space} ${github_user}'s Custom Menu ||
+isset ${menu} && set timeout 0 || set timeout 300000
 choose --timeout ${timeout} --default ${menu} menu || goto local
 echo ${cls}
 goto ${menu} ||
@@ -77,3 +81,14 @@ goto main_menu
 iseq ${sigs_enabled} true && set sigs_enabled false || set sigs_enabled true
 goto main_menu
 
+:about
+chain https://boot.netboot.xyz/about.ipxe || chain about.ipxe 
+goto main_menu
+
+:custom-github
+chain https://raw.githubusercontent.com/${github_user}/netboot.xyz-custom/master/custom.ipxe || goto error
+goto main_menu
+
+:custom-user
+chain custom/custom.ipxe
+goto main_menu

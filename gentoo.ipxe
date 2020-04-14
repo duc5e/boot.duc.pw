@@ -15,7 +15,7 @@ choose gentoo_version || goto gentoo_exit
 goto ${gentoo_version}
 
 :autobuilds
-set url ${live_endpoint}/asset-mirror/releases/download/20200322T214504Z-3db955b8/
+set url ${live_endpoint}/asset-mirror/releases/download/20200401T214502Z-3db955b8/
 goto boot
 
 

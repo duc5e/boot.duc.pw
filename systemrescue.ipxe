@@ -16,7 +16,7 @@ goto ${live_version}
 
 
 :current
-set url ${live_endpoint}/asset-mirror/releases/download/6.1.1-055507d5/
+set url ${live_endpoint}/asset-mirror/releases/download/6.1.2-055507d5/
 goto boot
 
 

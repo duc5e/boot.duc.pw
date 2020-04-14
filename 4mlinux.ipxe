@@ -28,7 +28,7 @@ set url ${live_endpoint}/asset-mirror/releases/download/32.0-0bc08fcf/
 goto boot
 
 :current-TheSSS
-set url ${live_endpoint}/asset-mirror/releases/download/32.0-17b08d75/
+set url ${live_endpoint}/asset-mirror/releases/download/32.1-17b08d75/
 goto boot
 
 

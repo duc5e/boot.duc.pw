@@ -1,0 +1,15 @@
+# duc.pw bootloaders generated at Tue Apr 14 12:14:38 UTC 2020
+# iPXE Commit: https://github.com/ipxe/ipxe/commit/bdf0e029ae8c9a0e173d5988ee64ff910538af53
+
+6136a2d3bcd16c04b2844472224bc3ca16bf324b8f70b8d49be82c3e6f5e08ac *netboot.xyz-arm64.efi
+569b912583a2efe7ad3f4524e9c150fc8cfded55a307b5a9ab6691ed14454d24 *netboot.xyz.dsk
+e5c7c04a0e2bd47483a07e92a68a90c93ab6987bf493447d6ff29262c5a623e7 *netboot.xyz.efi
+799b8e31afcf6cfbef469855ecd3146e77d801a3f3f884fc9de6749adcf65acb *netboot.xyz-efi.iso
+dd7d21f86fd95b1120d0e971adfd78897e9e59a04be88dc4d6786753adecf176 *netboot.xyz-efi.usb
+6941a1fef80eb87a12d9710992bd336b2e3c0189302616ba26b0b617c8c3f013 *netboot.xyz.iso
+441e80a03d0e20e16be1cc26a182df972ba6513c1ab3a230840ef8f1b5b1a33b *netboot.xyz.kpxe
+57b319125c5bf1c54b688e7e0fc797edcb63edf771467ce7867f91c208f51bb1 *netboot.xyz.lkrn
+3fd184129ca67c3da9f529772d300d40ba6273b53849f40c76b14251b1d62e8d *netboot.xyz-snp.efi
+0eb5941b92a27fbf6b08d2d822d6448fe2fcebe0b089e5e0399fccf139793a66 *netboot.xyz-snponly.efi
+da86ef124f1e5dc2f3a4443acc45b62ecd2a71312e77d9b5e3b33aaa348b492d *netboot.xyz-undionly.kpxe
+bca7f5354c5815f92d26e77dd98c0a131ab306e063f995ea484a8026b29a61d9 *netboot.xyz.usb

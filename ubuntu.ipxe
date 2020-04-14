@@ -10,6 +10,7 @@ set os Ubuntu
 clear ubuntu_version
 menu ${os} - ${arch_a}
 item --gap Latest Releases
+item focal ${space} ${os} 20.04 LTS Focal Fossa
 item eoan ${space} ${os} 19.10 Eoan Ermine
 item bionic ${space} ${os} 18.04 LTS Bionic Beaver
 item xenial ${space} ${os} 16.04 LTS Xenial Xerus

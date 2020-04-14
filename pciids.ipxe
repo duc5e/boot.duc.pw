@@ -17430,6 +17430,12 @@ goto 10de
 :10de1e90
 set dev TU104M [GeForce RTX 2080 Mobile]
 goto 10de
+:10de1e91
+set dev TU104M [GeForce RTX 2070 SUPER Mobile / Max-Q]
+goto 10de
+:10de1e93
+set dev TU104M [GeForce RTX 2080 SUPER Mobile / Max-Q]
+goto 10de
 :10de1eab
 set dev TU104M
 goto 10de
@@ -17491,10 +17497,10 @@ goto 10de
 set dev TU106M [GeForce RTX 2060 Mobile]
 goto 10de
 :10de1f12
-set dev TU106 [GeForce RTX 2060]
+set dev TU106M [GeForce RTX 2060 Max-Q]
 goto 10de
 :10de1f15
-set dev TU106 [GeForce RTX 2060]
+set dev TU106M [GeForce RTX 2060 Mobile]
 goto 10de
 :10de1f2e
 set dev TU106M
@@ -17526,6 +17532,9 @@ goto 10de
 :10de1f92
 set dev TU117M [GeForce GTX 1650 Mobile]
 goto 10de
+:10de1f95
+set dev TU117M [GeForce GTX 1650 Ti Mobile]
+goto 10de
 :10de1f96
 set dev TU117M [GeForce GTX 1650 Mobile / Max-Q]
 goto 10de
@@ -17555,6 +17564,9 @@ set dev TU116 [GeForce GTX 1650 SUPER]
 goto 10de
 :10de2191
 set dev TU116M [GeForce GTX 1660 Ti Mobile]
+goto 10de
+:10de2192
+set dev TU116M [GeForce GTX 1650 Ti Mobile]
 goto 10de
 :10de21ae
 set dev TU116GL
@@ -35397,8 +35409,29 @@ goto 17f3
 :17f31031
 set dev PCI/PCI-X to PCI-E Bridge
 goto 17f3
+:17f31070
+set dev CAN Bus Controller
+goto 17f3
+:17f31331
+set dev Motion Control Interface
+goto 17f3
+:17f31930
+set dev Hybrid Function Control Register
+goto 17f3
+:17f32010
+set dev RDC M2010 VGA-compatible graphics adapter
+goto 17f3
 :17f32012
 set dev M2012/R3308 VGA-compatible graphics adapter
+goto 17f3
+:17f32015
+set dev RDC M2015 VGA-compatible graphics adapter
+goto 17f3
+:17f36011
+set dev R6011 ISA Bridge
+goto 17f3
+:17f36013
+set dev R6013 ISA Bridge
 goto 17f3
 :17f36020
 set dev R6020 North Bridge
@@ -35406,11 +35439,26 @@ goto 17f3
 :17f36021
 set dev R6021 Host Bridge
 goto 17f3
+:17f36023
+set dev R6023 Host Bridge
+goto 17f3
+:17f36025
+set dev R6025 Host Bridge
+goto 17f3
+:17f36026
+set dev R6026 Host Bridge
+goto 17f3
 :17f36030
 set dev R6030 ISA Bridge
 goto 17f3
 :17f36031
 set dev R6031 ISA Bridge
+goto 17f3
+:17f36035
+set dev R6035 ISA Bridge
+goto 17f3
+:17f36036
+set dev R6036 ISA Bridge
 goto 17f3
 :17f36040
 set dev R6040 MAC Controller
@@ -38508,6 +38556,18 @@ goto 1cd7
 :1cd70017
 set dev PRO CAPTURE AIO 4K
 goto 1cd7
+:1cd70051
+set dev Eco Capture Dual HDMI M.2
+goto 1cd7
+:1cd70052
+set dev Eco Capture HDMI 4K M.2
+goto 1cd7
+:1cd70053
+set dev Eco Capture Dual SDI M.2
+goto 1cd7
+:1cd70054
+set dev Eco Capture Quad SDI M.2
+goto 1cd7
 :1cdd
 set ven secunet Security Networks AG
 exit
@@ -39284,6 +39344,9 @@ set dev The device has already been deleted.
 goto 1e57
 :1e6b
 set ven Axiado Corp.
+exit
+:1e85
+set ven Heitec AG
 exit
 :1e89
 set ven ID Quantique SA
@@ -43412,6 +43475,15 @@ set dev Ethernet Controller E810-C for QSFP
 goto 8086
 :80861593
 set dev Ethernet Controller E810-C for SFP
+goto 8086
+:80861599
+set dev Ethernet Controller E810-XXV for backplane
+goto 8086
+:8086159a
+set dev Ethernet Controller E810-XXV for QSFP
+goto 8086
+:8086159b
+set dev Ethernet Controller E810-XXV for SFP
 goto 8086
 :808615a0
 set dev Ethernet Connection (2) I218-LM
@@ -50325,8 +50397,20 @@ goto 8086
 :80868a23
 set dev Ice Lake Thunderbolt 3 PCI Express Root Port #3
 goto 8086
+:80868a51
+set dev Intel Iris Plus Graphics G7 (Ice Lake)
+goto 8086
 :80868a52
 set dev Iris Plus Graphics G7
+goto 8086
+:80868a56
+set dev Iris Plus Graphics G1 (Ice Lake)
+goto 8086
+:80868a5a
+set dev Iris Plus Graphics G4 (Ice Lake)
+goto 8086
+:80868a5c
+set dev Intel Iris Plus Graphics G4 (Ice Lake)
 goto 8086
 :80868c00
 set dev 8 Series/C220 Series Chipset Family 4-port SATA Controller 1 [IDE mode]
@@ -50868,8 +50952,26 @@ goto 8086
 :808696a1
 set dev Integrated RAID
 goto 8086
+:80869a09
+set dev 11th Gen Core Processor PCIe Controller
+goto 8086
 :80869a0b
 set dev Volume Management Device NVMe RAID Controller
+goto 8086
+:80869a14
+set dev 11th Gen Core Processor Host Bridge/DRAM Registers
+goto 8086
+:80869a23
+set dev Tiger Lake PCI Express Root Port #2
+goto 8086
+:80869a25
+set dev Tiger Lake PCI Express Root Port #3
+goto 8086
+:80869a27
+set dev Tiger Lake PCI Express Root Port #4
+goto 8086
+:80869a29
+set dev Tiger Lake PCI Express Root Port #5
 goto 8086
 :80869b41
 set dev UHD Graphics
@@ -51234,6 +51336,9 @@ goto 8086
 :80869d31
 set dev Sunrise Point-LP Thermal subsystem
 goto 8086
+:80869d32
+set dev CSI-2 Host Controller
+goto 8086
 :80869d35
 set dev Sunrise Point-LP Integrated Sensor Hub
 goto 8086
@@ -51245,6 +51350,9 @@ set dev Sunrise Point-LP Active Management Technology - SOL
 goto 8086
 :80869d43
 set dev Sunrise Point-LP LPC Controller
+goto 8086
+:80869d46
+set dev LPC/eSPI Controller
 goto 8086
 :80869d48
 set dev Sunrise Point-LP LPC Controller
@@ -51386,6 +51494,30 @@ set dev Atom Processor D4xx/D5xx/N4xx/N5xx Integrated Graphics Controller
 goto 8086
 :8086a013
 set dev Atom Processor D4xx/D5xx/N4xx/N5xx CHAPS counter
+goto 8086
+:8086a082
+set dev Tigerlake LP Z0 Chipset eSPI Controller
+goto 8086
+:8086a0a3
+set dev Tiger Lake PCH LP SMBus Controller
+goto 8086
+:8086a0a4
+set dev Tiger Lake PCH LP SPI Controller
+goto 8086
+:8086a0a8
+set dev Tiger Lake PCH Serial IO UART Host Controller
+goto 8086
+:8086a0ab
+set dev Tiger Lake PCH Serial IO SPI Host Controller
+goto 8086
+:8086a0c8
+set dev Tiger Lake PCH LP cAVS
+goto 8086
+:8086a0e0
+set dev Tiger Lake PCH HECI Controller
+goto 8086
+:8086a0e8
+set dev Tiger Lake PCH LP Serial IO I2C Controller #0
 goto 8086
 :8086a102
 set dev Q170/Q150/B150/H170/H110/Z170/CM236 Chipset SATA Controller [AHCI Mode]
@@ -52001,6 +52133,9 @@ set dev QM370 Chipset LPC/eSPI Controller
 goto 8086
 :8086a30d
 set dev HM470 Chipset LPC/eSPI Controller
+goto 8086
+:8086a30e
+set dev Cannon Lake LPC Controller
 goto 8086
 :8086a323
 set dev Cannon Lake PCH SMBus Controller

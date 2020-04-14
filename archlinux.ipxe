@@ -23,7 +23,7 @@ set os Arch Linux
 clear arch_version
 menu ${os} - ${arch}
 item --gap Latest Releases
-item 2020.03.01 ${space} ${os} 2020.03.01
+item 2020.04.01 ${space} ${os} 2020.04.01
 choose arch_version || goto archlinux_exit
 goto boot
 

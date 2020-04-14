@@ -13,8 +13,8 @@ goto ${live_version}
 
 
 :stable
-set squash_url ${live_endpoint}/ubuntu-squash/releases/download/2020.02.28-53f87b85/filesystem.squashfs
-set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/2020.02.28-53f87b85/
+set squash_url ${live_endpoint}/ubuntu-squash/releases/download/2020.03.27-53f87b85/filesystem.squashfs
+set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/2020.03.27-53f87b85/
 goto boot
 
 
